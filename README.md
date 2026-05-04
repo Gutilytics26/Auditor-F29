@@ -7,7 +7,7 @@ Este sistema lo hace en menos de 10 segundos.
 
 
 ¿Cómo funciona?
-El motor de extracción es completamente dinámico — no tiene lista predefinida de códigos tributarios. Detecta automáticamente cualquier código de 2 o 3 dígitos que aparezca en el PDF, incluyendo códigos nuevos que el SII agregue en futuras versiones del formulario.
+El motor de extracción es completamente dinámico no tiene lista predefinida de códigos tributarios. Detecta automáticamente cualquier código de 2 o 3 dígitos que aparezca en el PDF, incluyendo códigos nuevos que el SII agregue en futuras versiones del formulario.
 
 PDF F29 oficial del SII
         ↓
@@ -41,16 +41,22 @@ Funcionalidades
 Matriz de Auditoría Anual
 
 - Procesamiento simultáneo de múltiples PDFs F29
+  
 - Matriz comparativa: todos los códigos detectados × todos los períodos
+  
 - Ordenamiento cronológico automático
+  
 - Exportación Excel con formato numérico correcto
+  
 - Barra de progreso por archivo procesado
 
 Stack Tecnológico: pdfplumber, Pandas, Streamlit, xlsxwriter, re
 
  Casos de uso
 Estudios contables — Procesar los F29 anuales de múltiples clientes en minutos en vez de horas. Detectar inconsistencias antes de que el SII las detecte.
+
 Auditores financieros — Reconstruir la historia tributaria de una empresa desde los PDFs oficiales del SII sin acceso al software contable del cliente.
+
 Contadores independientes — Revisión de consistencia mensual de declaraciones propias o de clientes.
 
 Autor
